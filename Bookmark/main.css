@@ -1,0 +1,96 @@
+#mainDiv{
+    width:70%;
+    background-color: rgba(209, 202, 202, 0.5);
+    outline:none;
+    padding: 10px 30px 10px 30px;
+    border:none;
+    margin:0 auto;
+    position: relative;
+}
+h1{
+    text-align: center;
+    color: rgb(68, 66, 66)
+}
+#mainDiv p{
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    margin-bottom: 1%;
+}
+.input{
+    width:70%;
+    height:30px;
+    margin:0 15%;
+    padding: 0;
+    font-size: 20px;
+    text-indent: 10px;
+    padding-right: 10px;
+    color: rgb(107, 104, 104);
+    outline:none;
+}
+.input::placeholder{
+    font-size: 15px;
+}
+#submit{
+    width:16%;
+    height: 50px;
+    background-color: rgba(239, 245, 238, 0.5);
+    font-size: 20px;
+    color:rgba(0, 5, 3, 0.5);
+    outline: 0;
+    cursor: pointer;
+    margin:1% 42%;
+    box-shadow: none;
+}
+ul{
+    list-style: none;
+    width:77%;
+    outline:none;
+    border:none;
+    margin:5% auto;
+    padding: 0;
+    
+}
+li {
+    width: 100%;
+    background-color: rgba(209, 202, 202, 0.5); 
+    margin-bottom: 4%;
+    height:50px;
+    font-size: 30px;
+    text-indent: 10px;
+    position: relative;
+}
+li div{
+    border:none;
+    position: absolute;
+    font-size: 30px;
+    text-indent: 10px;
+    top:7px;
+    text-transform: capitalize;
+
+}
+.buttons{
+    float: right;
+    width:50px;
+    height:30px ;
+    border:none;
+    margin-top: 2px;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: 0;
+}
+li button:last-of-type{
+    margin-left: 10px;
+    background-color: aliceblue;
+}
+li button:first-of-type{
+    margin-left: 10px;
+    background-color: rgba(241, 56, 10,0.5);
+    color: aliceblue;
+}
+@media only screen and (max-width: 600px)
+{
+    .buttons{
+        width:50px;
+    }
+}

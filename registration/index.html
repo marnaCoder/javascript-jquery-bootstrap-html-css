@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Login</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+        <nav class="navbar navbar-default" style="padding-bottom:0">
+                <div class="container">
+                  
+                <div class="row">
+                <div class="navHead col-md-2" style="padding-top:30px;margin-bottom:0" role="alert">
+                <b>Already Registered?</b>
+              </div>
+              <div class="alert r col-md-8" style="padding-top:0;padding-bottom:0;margin-bottom:0" role="alert">
+              <form>
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="inputEmail4" style="margin-bottom:0;font-weight: 200">Email</label>
+                    <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+                  </div>
+                  <div class="form-group col-md-4">
+                    <label for="inputPassword4" style="margin-bottom:0;font-weight: 200">Password</label>
+                    <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+                  </div>
+                 
+                </div>
+                </form>
+              </div>
+              <div class="navButton col-md-2" style="padding-top:20px;margin-bottom:0" role="alert">
+                 
+                    <button type="submit" class="btn btn-default ">Go</button>
+                  
+              </div>
+                </div>
+                </div>
+              </nav>
+              <div class="jumbotron">
+                                          <div style="width: 100%; margin-bottom:40px;height: 20px; border-bottom: 1px solid rgb(206, 201, 201); text-align: center">
+                    <span style="font-size: 30px; background-color:white; padding: 0 30px;">
+                      OR<!--Padding is optional-->
+                    </span>
+                  </div>
+                  <div class="container">
+                  <form action="">
+                      <div class="row">
+                      <div class="col-md-4">
+                            <label for="register" id="registerAs">Register As<sup>*</sup></label>
+                            <select id="register" class="form-control">
+                                    
+                                <option disabled selected>Select member type</option>
+                              <option >Choose...</option>
+                              <option>...</option>
+                            </select>
+                        </div>
+                        </div>
+                        <div class="row" style="margin-top:20px; ">
+                                <div class="col-md-4">
+
+                                <label for="email" id="labelEmail">Email ID<sup>*</sup></label>
+                                    <input type="text" name="email" class="form-control" placeholder="****@****.com">
+
+                               </div>  
+                               </div> 
+                               <p class="error" id="errorEmail"><small> Enter a valid maid id(example:****@***.com)</small></p>
+
+                               <div class="row">
+                                    <div class="col-md-4">
+    
+                                    <label for="password" id="labelPassword">Password<sup>*</sup></label>
+                                        <input type="password" name="password" class="form-control">
+                                   </div>  
+                                   <div class="col-md-4">
+    
+                                        <label for="confirmPassword" id="labelConfirmPassword">Confirm Password</label>
+                                            <input type="password" name="confirmPassword" class="form-control">
+                                       </div> 
+                                   </div>  
+                                   <p class="error" id="errorPassword"><small> Password should be mininmum of 8 characters</small></p>
+
+                                   <div class="row">
+                                        <div class="col-md-4">
+        
+                                        <label for="firstName" id="labelName">Full Name<sup>*</sup></label>
+                                            <input type="text" name="firstName" class="form-control" placeholder="First Name">
+                                       </div>  
+                                       <div class="col-md-4">
+                                            <label> </label>
+                                                <input type="text"  name="middleName" class="form-control" placeholder="Middle Name" style="margin-top: 4px;">
+                                           </div> 
+                                           <div class="col-md-4">
+                                                <label> </label>
+                                                <input type="text"  name="lastName" class="form-control" placeholder="Last Name" style="margin-top: 4px;">
+                                           </div> 
+                                       </div> 
+                                       <p class="error" id="errorName"><small> Enter valid name</small></p>
+
+                                       <div class="row">
+                                            <div class="col-md-4">
+            
+                                            <label for="displayName">Display Name</label>
+                                                <input type="text" name="displayName" class="form-control" >
+                                           </div>  
+                                           <div class="col-md-4">
+                                                <label for="mobileNumber" id='labelMobile'>Mobile Number</label>
+                                                    <input type="text"  class="form-control" name="mobileNumber">
+                                                    <p class="error" id="errorMobile"><small> Enter valid No.</small></p>
+
+                                               </div> 
+                                               <div class="col-md-4">
+                                                    <label for="gender" id="labelGender">Gender<sup>*</sup></label>
+                                                    <select id="gender" class="form-control">
+                                                            
+                                                        <option disabled selected></option>
+                                                      <option value='male'>Male</option>
+                                                      <option value='female'>Female</option>
+                                                    </select>
+                                                    <p class="error" id="errorGender"><small> Please select a gender</small></p>
+                                                </div> 
+                                           </div> 
+                                           <div class="row">
+                                                <div class="col-md-4">
+                
+                                                <label for="captcha" id="labelCaptcha">Captcha<sup>*</sup></label>
+                                                    <input type="text" name="captcha" id="captcha"class="form-control" style="height:60px;width: 200px;" disabled>
+                                                    <p class="error" id="errorCaptcha"><small> Enter valid Captcha</small></p>
+
+                                               </div>  
+                                               <div class="col-md-4">
+                                                    <label for="code">Enter the code here</label>
+                                                    <input type="text"  class="form-control" name="code">
+                                               </div>
+                                               </div> 
+                                               <div style="font-size:20px;margin-top:20px;">
+                                                    <input type="checkbox" style="outline: 4px solid white;margin-bottom:10px ;" id="checkbox"style="height: 16px">
+                                                    <label ><b>   I have read,understood,and accepted the rules for membership</b></label>
+                                                  </div> 
+                                                  <div class="text-right">
+                                                        <button type="submit" style="background-color: rgb(148, 143, 143);color: white;    width:100px;height: 30px;
+                                                        ">Cancel</button>
+                                                        <button type="submit" id='submit'style="background-color: black;color: white;    width:100px;height: 30px;
+                                                        ">Register</button>
+                                                  </div> 
+                                                 
+                        </form>
+                    </div>
+                        </div>
+                        
+                
+                  
+                        <script src="main.js"></script>
+
+</body>
+</html>
